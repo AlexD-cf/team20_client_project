@@ -28,3 +28,7 @@ chat functionality?
 tutorial when new account is created?
 superuser that can control admin permissions?
 etc
+
+#005775 - blue
+#007faa - light blue
+#028844 - green
