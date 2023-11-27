@@ -1,0 +1,143 @@
+.homepage_header {
+    font-size: 30px;
+    height: 150px;
+    font-weight: lighter;
+    margin-top: 17px;
+    margin-bottom: 0;
+    justify-self: right;
+    font-weight: 700;
+    color: #e7ecef;
+    transform: skew(30deg);
+}
+
+.header_image {
+    height: 70px;
+    transform: skew(30deg);
+    margin-left: 35px;
+}
+
+.dashboard_buttons {
+    animation: fadeIn 2s;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    display: grid;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0%; 
+        margin-bottom: 50px;}
+    100% { opacity: 1; 
+        margin-bottom: 0px;}
+  }
+
+.login_tile {
+    border: solid 1px black;
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 550px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 500px;
+    border-radius: 9px;
+    transition: margin-top 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-image: url("login_Image.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+    background-color: #fefefe;
+}
+
+.login_tile:hover {
+    margin-top: 25px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.46);
+}
+
+.create_account_tile {
+    background-color: #fefefe;
+    border: solid 1px black;
+    margin-top: 30px;
+    margin-left: 35px;
+    width: 550px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 500px;
+    border-radius: 9px;
+    transition: margin-top 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-image: url("create_account_image.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+}
+
+.create_account_tile:hover {
+    margin-top: 25px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.46);
+}
+
+.customer_login_tile {
+    background-color: #fefefe;
+    border: solid 1px black;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 550px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    height: 500px;
+    border-radius: 9px;
+    transition: margin-top 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-image: url("landg-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: center;
+}
+
+.customer_login_tile:hover {
+    margin-top: 25px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.46);
+}
+
+
+.tile_text {
+    font-size: 25px;
+    color: black;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: center;
+    margin-top: 370px;
+}
+
+.dashboard_button {
+    text-decoration: none;
+}
+
+.about_me_header {
+    font-size: 25px;
+    color: black;
+    font-weight: lighter;
+    justify-content: center;
+    text-align: center;
+    margin-top: 210px;
+
+}
+
+.text_guidance {
+    margin-top: 50px;
+    justify-items: center;
+    animation: fadeIn 2s;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    display: grid;
+    font-size: 20px;
+}
+
+
+
