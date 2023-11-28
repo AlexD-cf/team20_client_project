@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+html * {
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+
+}
+
+
+.preload {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
+
+body {
+  margin: 0px;
+  overflow: auto;
+  background-color: #e7ecef;
+}
+.dropdown_menu{
+  height: 100%;
+}
+
+
+.container_top_dashboard {
+  animation: fadeIn 1.5s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(0, 118, 214);
+  margin-left: -30px;
+  height: 70px;
+  transform: skew(-30deg);
+  z-index: -1;
+  width: 225px;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0%; }
+  100% { opacity: 1; }
+}
+
+.container_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(0, 118, 214);
+  margin-left: -30px;
+  height: 70px;
+  transform: skew(-30deg);
+  z-index: -1;
+  width: 225px;
+}
+
+
+/* Hamburger */
+.three_lines {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  margin-left: 50px;
+  margin-top: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: left;
+  transform: skew(30deg);
+  z-index: 120;
+}
+
+.three_lines div {
+  background-color: #e7ecef;
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 9px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+
+#toggle_menu {
+  display: none;
+}
+
+#toggle_menu:checked + .container_top .three_lines .top {
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle_menu:checked + .container_top .three_lines .meat {
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle_menu:checked + .container_top .three_lines .bottom {
+  transform: scale(0);
+}
+
+#toggle_menu:checked ~ .menu1 {
+  height: 175px;
+  width: 225px;
+  z-index: -1;
+  position: absolute;
+}
+
+#toggle_menu:checked ~ .container_top {
+  animation: unskew 0.5s forwards;
+}
+
+#toggle_menu:not(:checked) ~ .container_top .login_header,
+#toggle_menu:not(:checked) ~ .container_top .three_lines {
+  transform: skew(30deg);
+}
+
+#toggle_menu:checked ~ .container_top .login_header {
+  transform: skew(0deg);
+  margin-right: 50px;
+}
+
+#toggle_menu:checked ~ .container_top .three_lines {
+  transform: skew(0deg);
+}
+
+#toggle_menu:not(:checked) ~ .container_top {
+  animation: reskew 0.5s;
+}
+
+@keyframes reskew {
+  0% {
+    transform: skew(0deg);
+    width: 255px;
+  }
+  100% {
+    transform: skew(-30deg);
+  }
+}
+
+@keyframes unskew {
+  0% {width: 225px;
+    justify-self: right;
+  }
+  100% {transform: skew(0deg);
+        width: 255px}
+}
+
+
+
+/* Menu */
+.menu1 {
+  width: 225px;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgba(0, 118, 214);
+  grid-row-gap: 20px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  text-align: left;
+  height: 0px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  transition: height .3s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1:first-child {
+  margin-top: 20px;
+}
+
+.link1 {
+  color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: large;
+}
+
+.current_link {
+  color: white;
+  margin: 0;
+  padding: 10px;
+  font-size: large;
+}
+
+.link1:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1), 
+               0 16px 16px rgba(0, 0, 0, .1), 
+               8px 32px 32px rgba(0, 0, 0, .15), 
+               8px 64px 64px rgba(0, 0, 0, .15); 
+  margin-left: 25px;
+}
+
+.link1:active {
+  box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+               0 1px  6px  rgba(0, 0, 0, .05),
+               0 8px  8px  rgba(0, 0, 0, .1), 
+               0 16px 16px rgba(0, 0, 0, .1), 
+               8px 16px 16px rgba(0, 0, 0, .15), 
+               8px 32px 32px rgba(0, 0, 0, .15);
+}

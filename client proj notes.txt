@@ -1,0 +1,30 @@
+create new quiz
+quiz has between two and four multiple choice answers p question
+users log into the quiz and answers are collected throughout
+5 - 15 qs per quiz
+30-60 seconds per question chosen by quiz host
+when quiz ends there is a leader board of participants with scores
+***its basically kahoot
+add photos music or videos to quizzes
+no limit for participants
+save new quizzes into a library
+anyone can make quizzes
+admin access for things
+
+used for training staff - plays video then quiz?
+chats between team members for general announcements
+like posts
+tag staff members and notify them
+mood checks between team members - each member is asked their mood and then averaged for a general consensus
+
+set individual quizzes for teams or people
+
+highest priority functionality - quiz that works
+
+programming language options - JS, html, sql for sure
+
+- optional - 
+chat functionality?
+tutorial when new account is created?
+superuser that can control admin permissions?
+etc
